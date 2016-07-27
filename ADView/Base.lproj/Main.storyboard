@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ADView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kz-w3-l58">
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G77-4v-OHR">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.15384046730000001" blue="0.098800876709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="G77-4v-OHR" firstAttribute="leading" secondItem="2Kz-w3-l58" secondAttribute="leading" id="AAl-xe-oBa"/>
+                                    <constraint firstItem="G77-4v-OHR" firstAttribute="top" secondItem="2Kz-w3-l58" secondAttribute="top" id="C8p-Zg-JKA"/>
+                                    <constraint firstAttribute="height" constant="300" id="VkX-mh-2ga"/>
+                                    <constraint firstAttribute="bottom" secondItem="G77-4v-OHR" secondAttribute="bottom" id="u9K-WW-495"/>
+                                    <constraint firstAttribute="trailing" secondItem="G77-4v-OHR" secondAttribute="trailing" id="wvg-VD-kft"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-VC-TOB">
+                                <rect key="frame" x="50" y="340" width="500" height="30"/>
+                                <color key="backgroundColor" red="0.30758686390000001" green="0.21650521580000001" blue="0.81412259620000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sMV-xf-hgp"/>
+                                </constraints>
+                                <state key="normal" title="开始广告"/>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pW4-bQ-tdx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lkb-iM-8ja">
+                                <rect key="frame" x="50" y="380" width="500" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FgE-VC-TOB" firstAttribute="top" secondItem="2Kz-w3-l58" secondAttribute="bottom" constant="20" id="2tW-oD-Kdh"/>
+                            <constraint firstItem="Lkb-iM-8ja" firstAttribute="top" secondItem="FgE-VC-TOB" secondAttribute="bottom" constant="10" id="8ey-f3-SlX"/>
+                            <constraint firstItem="Lkb-iM-8ja" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="98u-GV-f4l"/>
+                            <constraint firstAttribute="trailing" secondItem="2Kz-w3-l58" secondAttribute="trailing" id="DpL-tg-LD3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lkb-iM-8ja" secondAttribute="bottom" constant="20" id="GQN-5m-Vtm"/>
+                            <constraint firstItem="2Kz-w3-l58" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vqx-fk-Dyb"/>
+                            <constraint firstAttribute="trailing" secondItem="Lkb-iM-8ja" secondAttribute="trailing" constant="50" id="YwM-vf-EcU"/>
+                            <constraint firstItem="2Kz-w3-l58" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ey6-lG-YFW"/>
+                            <constraint firstItem="FgE-VC-TOB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="hg5-Td-vwd"/>
+                            <constraint firstItem="Lkb-iM-8ja" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHx-zL-Hkz"/>
+                            <constraint firstAttribute="trailing" secondItem="FgE-VC-TOB" secondAttribute="trailing" constant="50" id="pQy-SU-ub1"/>
+                            <constraint firstItem="FgE-VC-TOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yz1-US-qx5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adCoverView" destination="2Kz-w3-l58" id="EbU-il-03a"/>
+                        <outlet property="adDefaultImaeView" destination="G77-4v-OHR" id="hNr-rl-iFo"/>
+                        <outlet property="imageView" destination="Lkb-iM-8ja" id="hwp-iP-XmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
